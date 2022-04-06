@@ -19,7 +19,8 @@
             <div class="col-md-12">
                 <div class="border-0 shadow rounded">
                     <div class="card-body bg-white">
-                        <form action="" method="POST">
+                        <form method="POST" action="{{ route('users.store') }}">
+                            @csrf
                             <div class="mb-3">
                                 <div class="mb-3">
                                     <label for="exampleInputPassword1" class="form-label">First Name</label>
